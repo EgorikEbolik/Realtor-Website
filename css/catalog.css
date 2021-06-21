@@ -1,0 +1,280 @@
+header {
+    background: #fff
+}
+
+body {
+    font-family: 'Jost', sans-serif;
+    background-color: #f9f9f9;
+
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.header_info {
+    display: flex;
+    flex-direction: row;
+    margin-top: 40px;
+    justify-content: space-around;
+    border-bottom: 1px solid #636c6c;
+
+}
+
+
+
+.info_item {
+    font-weight: 700;
+    font-size: 24px;
+    margin-top: 20px;
+    color: #2b2b2b;
+    text-align: center
+}
+
+
+
+.info_logo {
+    font-weight: 700;
+    font-size: 24px;
+    cursor: pointer;
+    margin-top: 20px;
+    color: #2b2b2b;
+}
+
+
+.info_logo a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.info_logo p {
+    margin: 18px 0;
+    font-size: 18px;
+
+}
+
+.info_item i {
+    color: #2c4362;
+    padding-right: 5px;
+    height: 18px;
+}
+
+.info_item p {
+    color: #4b4b4b;
+    font-size: 18px;
+}
+
+.header_nav {
+
+    font-size: 22px;
+    font-weight: 400px;
+    color: #2b2b2b;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.header_nav_item {
+    text-decoration: none;
+    color: inherit;
+    border-right: 1px solid;
+    width: 34%;
+    text-align: center;
+    transition: 0.5s;
+
+
+}
+
+.header_nav_item:hover {
+    background-color: #2c4362;
+    color: #fff;
+}
+
+.header_nav_item:last-child {
+    border-right: 0;
+
+}
+
+a {
+    text-decoration: none;
+    color: inherit
+}
+
+
+.filters_list {
+    padding: 50px 0;
+    border-bottom: 1px solid #636c6c;
+    border-top: 1px solid #636c6c;
+}
+
+.filters {
+    display: flex;
+    gap: 30px;
+    justify-content: space-around;
+
+}
+
+.selector select {
+    outline: none;
+    height: 60px;
+    padding: 5px 50px 5px 20px;
+    background: #b0cef58c;
+    border: 2px solid #b0cef58c;
+    border-radius: 3px;
+    cursor: pointer;
+    appearance: none;
+    font-size: 16px;
+    font-family: 'Jost', sans-serif;
+    width: inherit;
+    transition: .3s ease
+}
+
+.selector {
+    text-align: center;
+    width: 270px;
+    font-weight: 700;
+    color: #2b2b2b;
+    font-size: 22px;
+
+}
+
+.select {
+    position: relative;
+    width: inherit;
+    margin-top: 10px;
+    transition: .3s ease;
+
+}
+
+.select::after {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    content: '';
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 7px 5px 0 5px;
+    border-radius: 3px;
+    border-color: #000 transparent transparent transparent;
+    transition: .3s ease;
+
+}
+
+.select:hover::after {
+    border-color: #2c4362 transparent transparent transparent;
+}
+
+
+select:hover {
+    background-color: #b0cef5fb;
+    border: 2px solid #2c4362;
+}
+
+.deals_grid {
+    margin-top: 100px;
+}
+
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.deal {
+    width: calc(100vh / 2);
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #636c6c;
+    border-radius: 20px;
+    overflow: hidden;
+    margin: 30px 15px;  
+    transition: 0.3s ease-in;
+}
+
+h2 {
+    text-align: center;
+    font-weight: 700;
+    font-size: 38px;
+    color: #2b2b2b;
+    padding-top: 10px;
+    min-height: 110px;
+}
+
+.deal:hover {
+    box-shadow: 10px 7px 15px 15px #4b4b4b;
+    transform: translate(-3%, -5%)
+}
+
+.deal img {
+    max-height: 300px;
+}
+
+.deal_title {
+    font-weight: 700;
+    font-size: 34px;
+    color: #2b2b2b;
+    align-self: center;
+    padding-top: 10px;
+    min-height: 110px;
+}
+
+.deal_description {
+    font-weight: 400;
+    font-size: 20px;
+    color: #2b2b2b;
+    margin: 20px 15px;
+    text-align: center;
+}
+
+.description {
+    min-height: 440px;
+}
+
+.hidden_text,
+.hidden {
+    display: none
+}
+
+
+.address {
+    margin-top: -130px;
+    font-weight: 700;
+    min-height: 70px;
+}
+
+.deal_price {
+    margin: 15px 0;
+    font-weight: 700;
+}
+
+.deal_price small {
+    padding-left: 5px;
+}
+
+.show_more_btn {
+    background: #ffffff;
+    color: #2c4362;
+    border: 3px solid #2c4362;
+    border-radius: 30px;
+    font-size: 20px;
+    font-weight: 700;
+    height: 60px;
+    width: 60%;
+    transition: 0.2s ease;
+    text-align: center;
+    margin-top: 10px;
+
+}
+
+.show_more_btn:hover {
+    background: #2c4362;
+    color: #f2f9fe;
+    cursor: pointer;
+    transform: scale(1.1)
+}
+
+.show_more_btn:active,
+.show_more_btn:focus {
+    outline: none
+}

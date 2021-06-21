@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>R&B Apartments</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;700;900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/ee8af86b7c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
+    <link rel="stylesheet" href="css/popup.css" type="text/css" />
+    <script src="js/jquery-3.6.0.js"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=dc970910-63ca-43e4-880a-fa1bfa45e813&lang=ru_RU"
+        type="text/javascript"></script>
+
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="header_info">
+                <div class="info_logo"><a href="#">Герасимова Юлия<p>
+                            Частный риэлтор
+                            </span></p>
+                    </a></div>
+                <div class="info_item"><i class="fas fa-envelope"></i>Электронная почта<p><a
+                            href="mailto2327175@bk.ru">2327175@bk.ru</a></p>
+                </div>
+                <div class="info_item"><i class="fas fa-phone"></i>Телефон<p>+7 (391) 232 71 75</p>
+                </div>
+            </div>
+            <nav class="header_nav">
+                <a href="#about" class="header_nav_item">О себе</a>
+                <a href="#" class="header_nav_item">Стоимость услуг</a>
+                <a href="/catalog.html" class="header_nav_item">Каталог</a>
+            </nav>
+        </div>
+    </header>
+    <div class="img_top">
+        <div class="container">
+            <div class="img_adventeges_block">
+                <div class="img_adventeges_title">
+                    Частный риэлтор
+                </div>
+                <div class="img_adventeges_desc">
+                    Надёжный частный риелтор, более 10 лет на рынке недвижимости.
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="adventeges">
+        <div class="container">
+            <h2>Мои преимущества</h2>
+            <section>
+                <div class="adventeges_item">
+                    <div class="circle"><i class="fas fa-user"></i></div>
+                    <div class="adventege_title">Полное сопровождение</div>
+                    <div class="adventege_descr">Я помогаю вам с моменнта подбора квартиры, до полчучения ключей</div>
+                </div>
+                <div class="adventeges_item">
+                    <div class="circle"><i class="fas fa-star"></i></div>
+                    <div class="adventege_title">Большой опыт</div>
+                    <div class="adventege_descr">Я знаю как избежать проблем в сложных ситуациях</div>
+                </div>
+                <div class="adventeges_item">
+                    <div class="circle"><i class="fas fa-wallet"></i></div>
+                    <div class="adventege_title">Небольшая стоимость</div>
+                    <div class="adventege_descr">Мои услуги стоят недорого, но экономят много времени</div>
+                </div>
+            </section>
+        </div>
+    </div>
+    <div class="last_deals">
+        <div class="container">
+            <h2>Последние предложения</h2>
+            <div class="deals_grid">
+                <div class="deal">
+                    <img src="imgs/deal.jpg" alt="">
+                    <h2 class="deal_title">Таунхаус</h2>
+                    <div class="deal_description">
+                        <div class="description">Продаётся просторная, уютная комната в в общежитии общей площадью - 19
+                            кв .м. В комнате выделена зона кухни, имеется раковина, душевая кабинка, стиральная машинка.
+                            Установлены ПВХ, радиаторы, входная металлическая дверь.
+                        </div>
+                        <div class="hidden_text"></div>
+                        <div class="hidden" id="rooms">1</div>
+                        <div class="hidden" id="floor">4</div>
+                        <div class="hidden" id="area">19</div>
+                        <div class="hidden" id="built">1993</div>
+                        <div class="address">р-н Ленинский, мкр. Черемушки, ул. Шевченко, 68</div>
+                        <div class="deal_price">8500000<small>₽</small></div>
+                        <button class="show_more_btn">Подробнее</button>
+                    </div>
+                </div>
+                <div class="deal">
+                    <img src="imgs/deal2.jpg" alt="">
+                    <h2 class="deal_title">2-х комнатная квартира</h2>
+                    <div class="deal_description">
+                        <div class="description">Евродвушка, сдача - конец 2021 г. Отделка получистовая. БЕЗ ОПЛАТЫ
+                            КОМИССИИ ПОКУПАТЕЛЕМ!!! ВЫБОР ЭТАЖЕЙ И ПЛАНИРОВОК В ЭТОМ ДОМЕ!!!
+
+                            Преимущества ЖК Серебряный: + Улучшенное благоустройство двора с крупными деревьями. +
+                            Система видеонаблюдения (включает в себя камеры в лифтах, в лифтовом холле первого этажа и
+                            на придомовой территории). + Детская площадка с резиновым покрытием и многофункциональным
+                            детским городком. + Получистовая отделка квартир с установкой отопительных приборов
+                            Универсал. + Близость высших учебным заведений. + Зеленый сквер для пеших прогулок. +
+                            Спортивная площадка для футбола и баскетбола. + Повышенная звукоизоляция межквартирных стен
+                            (кирпичные стены толщиной 250 мм либо железобетонные межквартирные стены толщиной 200 мм). +
+                            Закрытый от автомобилей внутренний двор. Входы в подъезды дома выполнены с обеих сторон, на
+                            уровне отметки благоустройства.
+
+                        </div>
+                        <div class="hidden_text"></div>
+                        <div class="hidden" id="rooms">2</div>
+                        <div class="hidden" id="floor">14</div>
+                        <div class="hidden" id="area">55/48/7</div>
+                        <div class="hidden" id="built">2021</div>
+                        <div class="address">Красноярск, р-н Октябрьский, мкр. Удачный
+                        </div>
+                        <div class="deal_price">2500000<small>₽</small></div>
+                        <button class="show_more_btn">Подробнее</button>
+                    </div>
+                </div>
+                <div class="deal">
+                    <img src="imgs/deal3.jpg" alt="">
+                    <h2 class="deal_title">4-х комнатная квартира в Октябрьском районе</h2>
+                    <div class="deal_description">
+                        <div class="description">"Еврочетырешка" в ЖК "ТИХИЕ ЗОРИ", дом сдан в декабре 2020 г. Отделка
+                            получистовая. БЕЗ ОПЛАТЫ КОМИССИИ ПОКУПАТЕЛЕМ!!! ВЫБОР ЭТАЖЕЙ И ПЛАНИРОВОК В ЭТОМ ДОМЕ!!!
+
+                            Подходит под программу Господдержки. Преимущества жилого района Тихие зори: + Экологически
+                            благоприятный район с красивыми видами на реку Енисей и предгорье Саян. Близость знаковых
+                            мест отдыха - Столбы, Фанпарк Бобровый Лог, Роев Ручей. + Благоустроенная Набережная
+                            протяженностью 1450 метров вдоль реки Енисей и 500 метров вдоль реки Базаиха с
+                            организованными спусками к воде и остановкой речного пассажирского транспорта возле ледовой
+                            арены. + Сеть пешеходных и велосипедно-роликовых дорожек по всему району. + Закрытый от
+                            автомобилей внутренний двор, переходящий в набережную, также без пересечения с движением
+                            автотранспорта. Входы в подъезды домов выполнены на уровне отметки благоустройства с обеих
+                            сторон дома. + На территории жилого района Тихие зори выделены участки под строительство
+                            школы на 1280 человек и трех детских садов. + Система видеонаблюдения за счет застройщика
+                            (включает в себя камеры в лифтах, в лифтовом холле первого этажа и на придомовой
+                            территории). + Повышенная звукоизоляция межквартирных стен (кирпичные стены толщиной 250 мм
+                            либо железобетонные межквартирные стены толщиной 200 мм). + Установка в квартирах
+                            отопительных приборов Универсал. + С западной стороны дома будет расположена парковка
+                            двухуровневого типа.
+
+                        </div>
+                        <div class="hidden_text"></div>
+                        <div class="hidden" id="rooms">4</div>
+                        <div class="hidden" id="floor">9</div>
+                        <div class="hidden" id="area">90/80/10</div>
+                        <div class="hidden" id="built">2020</div>
+                        <div class="address">Октябрьский район</div>
+                        <div class="deal_price">1900000<small>₽</small></div>
+                        <button class="show_more_btn">Подробнее</button>
+                    </div>
+                </div>
+                <div class="deal">
+                    <img src="imgs/deal.jpg" alt="">
+                    <h2 class="deal_title">1-комнатная квартира</h2>
+                    <div class="deal_description">
+                        <div class="description">Полноценная 1-ком.квартира в ЖК "ТИХИЕ ЗОРИ", дом сдан в декабре 2020
+                            г. Отделка получистовая.
+                            БЕЗ ОПЛАТЫ КОМИССИИ ПОКУПАТЕЛЕМ!!! ВЫБОР ЭТАЖЕЙ И ПЛАНИРОВОК В ЭТОМ ДОМЕ!!!
+
+                            Преимущества жилого района Тихие зори: + Экологически благоприятный район с красивыми видами
+                            на реку Енисей и предгорье Саян. Близость знаковых мест отдыха - Столбы, Фанпарк Бобровый
+                            Лог, Роев Ручей. + Благоустроенная Набережная протяженностью 1450 метров вдоль реки Енисей и
+                            500 метров вдоль реки Базаиха с организованными спусками к воде и остановкой речного
+                            пассажирского транспорта возле ледовой арены. + Сеть пешеходных и велосипедно-роликовых
+                            дорожек по всему району. + Закрытый от автомобилей внутренний двор, переходящий в
+                            набережную, также без пересечения с движением автотранспорта. Входы в подъезды домов
+                            выполнены на уровне отметки благоустройства с обеих сторон дома. + На территории жилого
+                            района Тихие зори выделены участки под строительство школы на 1280 человек и трех детских
+                            садов. + Система видеонаблюдения за счет застройщика (включает в себя камеры в лифтах, в
+                            лифтовом холле первого этажа и на придомовой территории). + Повышенная звукоизоляция
+                            межквартирных стен (кирпичные стены толщиной 250 мм либо железобетонные межквартирные стены
+                            толщиной 200 мм). + Установка в квартирах отопительных приборов Универсал. + С западной
+                            стороны дома будет расположена парковка двухуровневого типа
+
+                        </div>
+                        <div class="hidden_text"></div>
+                        <div class="hidden" id="rooms">1</div>
+                        <div class="hidden" id="floor">8</div>
+                        <div class="hidden" id="area">37/30/7</div>
+                        <div class="hidden" id="built">2020</div>
+                        <div class="address">Советский р-н, 12.5-1</div>
+                        <div class="deal_price">8500000<small>₽</small></div>
+                        <button class="show_more_btn">Подробнее</button>
+                    </div>
+                </div>
+                <div class="deal">
+                    <img src="imgs/deal.jpg" alt="">
+                    <h2 class="deal_title">3-x Комнатная квартира</h2>
+                    <div class="deal_description">
+                        <div class="description">"Евротрешка" в ЖК "ТИХИЕ ЗОРИ", дом сдан в декабре 2020 г. Отделка
+                            получистовая. БЕЗ ОПЛАТЫ КОМИССИИ ПОКУПАТЕЛЕМ!!! ВЫБОР ЭТАЖЕЙ И ПЛАНИРОВОК В ЭТОМ ДОМЕ!!!
+
+                            Преимущества жилого района Тихие зори: + Экологически благоприятный район с красивыми видами
+                            на реку Енисей и предгорье Саян. Близость знаковых мест отдыха - Столбы, Фанпарк Бобровый
+                            Лог, Роев Ручей. + Благоустроенная Набережная протяженностью 1450 метров вдоль реки Енисей и
+                            500 метров вдоль реки Базаиха с организованными спусками к воде и остановкой речного
+                            пассажирского транспорта возле ледовой арены. + Сеть пешеходных и велосипедно-роликовых
+                            дорожек по всему району. + Закрытый от автомобилей внутренний двор, переходящий в
+                            набережную, также без пересечения с движением автотранспорта. Входы в подъезды домов
+                            выполнены на уровне отметки благоустройства с обеих сторон дома. + На территории жилого
+                            района Тихие зори выделены участки под строительство школы на 1280 человек и трех детских
+                            садов. + Система видеонаблюдения за счет застройщика (включает в себя камеры в лифтах, в
+                            лифтовом холле первого этажа и на придомовой территории). + Повышенная звукоизоляция
+                            межквартирных стен (кирпичные стены толщиной 250 мм либо железобетонные межквартирные стены
+                            толщиной 200 мм). + Установка в квартирах отопительных приборов Универсал. + С западной
+                            стороны дома будет расположена парковка двухуровневого типа.
+
+                        </div>
+                        <div class="hidden_text"></div>
+                        <div class="hidden" id="rooms">3</div>
+                        <div class="hidden" id="floor">16</div>
+                        <div class="hidden" id="area">65/45/20</div>
+                        <div class="hidden" id="built">2020</div>
+                        <div class="address">Советский р-н, 12.5-1</div>
+                        <div class="deal_price">4552000<small>₽</small></div>
+                        <button class="show_more_btn">Подробнее</button>
+                    </div>
+                </div>
+                <div class="deal">
+                    <img src="imgs/deal.jpg" alt="">
+                    <h2 class="deal_title">Таунхаус</h2>
+                    <div class="deal_description">
+                        <div class="description">Таунхаус в черте города, продажа с мебелью, имеется гараж и банянеподолёку</div>
+                        <div class="hidden_text" id="descr"></div>
+                        <div class="hidden" id="rooms">6</div>
+                        <div class="hidden" id="floor">2</div>
+                        <div class="hidden" id="area">130/90/20</div>
+                        <div class="hidden" id="built">2009</div>
+                        <div class="address">Саянская улица 245</div>
+                        <div class="deal_price">8500000<small>₽</small></div>
+
+                        <button class="show_more_btn">Подробнее</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="about" id="about">
+        <div class="container">
+            <h2>О себе</h2>
+            <div class="about_description">
+                Идейные соображения высшего порядка, а также сложившаяся структура организации представляет собой
+                интересный эксперимент проверки новых предложений. Повседневная практика показывает, что постоянный
+                количественный рост и сфера нашей активности играет важную роль в формировании модели развития. <p>Таким
+                    образом реализация намеченных плановых заданий представляет собой интересный эксперимент проверки
+                    соответствующий условий активизации. Равным образом начало повседневной работы по формированию
+                    позиции обеспечивает широкому кругу (специалистов) участие в формировании форм развития.</p>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="contacts">
+            <span><i class="fas fa-phone"></i>Телефон: +7 (391) 232 71 75</span>
+            <span><i class="fas fa-envelope"></i>Электронная почта: <a
+                    href="mailto2327175@bk.ru">2327175@bk.ru</a></span>
+
+        </div>
+    </footer>
+
+    <div class="popup">
+        <div class="popup_wrapper">
+            <div class="popup_inner">
+                <div class="popup_content">
+                    <div class="popup_close_btn"></div>
+                    <h2>Таунхаус в черте города</h2>
+                    <div class="popup_slider">
+
+                        <div class="slider_item show_item"><img src="imgs/more1.jpg" alt="photo1"></div>
+                        <div class="slider_item"><img src="imgs/more2.jpg" alt="photo2"></div>
+                        <div class="slider_item"><img src="imgs/more3.jpg" alt="photo3"></div>
+                        <div class="slider_item"><img src="imgs/more4.jpg" alt="photo4"></div>
+                        <div class="slider_item"><img src="imgs/more5.jpg" alt="photo5"></div>
+                        <div class="slider_item"><img src="imgs/more6.jpg" alt="photo6"></div>
+
+                        <a class="next_btn"">&#10095;</a>
+                    </div>
+                    <div class=" item_info">
+                            <div style="overflow:hidden;">
+                                <div class="item_address">Красноярск, р-н Ленинский, мкр. Черемушки, ул. Шевченко, 68
+                                </div>
+                                <div class="item_price">8500000₽</div>
+                            </div>
+                            <div class="item_specs">
+                                <div class="spec">
+                                    <div class="spec_title">Кол-во комнат</div>
+                                    <div class="spec_value" id="rooms_value">4</div>
+                                </div>
+                                <div class="spec">
+                                    <div class="spec_title">Этаж</div>
+                                    <div class="spec_value" id = "floor_value" >4/10 К</div>
+                                </div>
+                                <div class="spec">
+                                    <div class="spec_title">Площадь</div>
+                                    <div class="spec_value" id="area_value">216 М²/158 М²/29 M²</div>
+                                </div>
+                                <div class="spec">
+                                    <div class="spec_title">Год постройки</div>
+                                    <div class="spec_value" id = "built_value">2013</div>
+                                </div>
+                            </div>
+                            <div class="item_description">
+
+                            </div>
+                            <div class="item_map" id="map">
+
+                            </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="js/popup.js"></script>
+        <script src="js/slider.js"></script>
+        <script src="js/deal.js"></script>
+        <script src="js/cutDescription.js"></script>
+        <script src="js/map.js"></script>
+</body>
+
+</html>
